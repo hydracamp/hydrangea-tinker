@@ -55,6 +55,12 @@ rake --describe hydra
 rake hydra:jetty:load
 </pre>
 
+Note: If you run into issues with Jetty not starting correctly, you can run the following command to view errors/issues with the start process (it will no longer swallow the errors):
+
+<pre>
+rake HYDRA_CONSOLE=true hydra:jetty:start
+</pre>
+
 Import the fixture objects that are used by the rspec and cucumber tests
 
 <pre>
